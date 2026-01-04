@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Temple Profile Generator</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">PRE-PROFILE</a>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="https://github.com/itz-raxxi" class="nav-links">About Us</a></li>
+                <li class="nav-item"><a href="https://www.instagram.com/itz_raxxi" class="nav-links">Contact</a></li>
+                <li class="nav-item close-btn-item"><i class="fas fa-times" id="close-menu"></i></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="editor-container animate-on-scroll">
+            <div class="upload-area">
+                <input type="file" id="file-input" accept="image/*">
+                <label class="btn-upload" for="file-input">
+                    <i class="fas fa-camera"></i> Upload Photo
+                </label>
+            </div>
+            
+            <div class="canvas-wrapper">
+                <canvas id="image-canvas"></canvas>
+                <div id="loading-text">
+                    <i class="fas fa-spinner fa-spin"></i> Loading...
+                </div>
+            </div>
+            
+            <div class="tips">
+                <p><i class="fas fa-hand-pointer"></i> Pinch to Zoom & Drag to Move</p>
+            </div>
+
+            <button id="download-button" class="btn-download" disabled>
+                <i class="fas fa-download"></i> Download Image
+            </button>
+        </section>
+
+        <section class="info-section animate-on-scroll">
+            <div class="kannada-text">
+                <h3>ಶ್ರೀ ಸೂರ್ಯನಾರಾಯಣ ದೇವಾಲಯ</h3>
+               <div style="text-align: center;">
+    <p>
+        ನಾರಾವಿ ಎಂಬುದು ದ.ಕ ಜಿಲ್ಲೆಯ ಬೆಳ್ತಂಗಡಿ ತಾಲೂಕಿನ ನಿಸರ್ಗರಮಣೀಯ ಪರಿಸರದಲ್ಲಿರುವ ಒಂದು ಸುಂದರ ಪ್ರದೇಶ, ಈ ಊರಿಗೆ ಖ್ಯಾತಿ ತಂದು ಕೊಟ್ಟಿರುವುದು ಭಗವಾನ್ ಶ್ರೀ ಸೂರ್ಯನಾರಾಯಣ ದೇವಾಲಯ.<br>
+        ಶ್ರೀ ಸೂರ್ಯದೇವರನ್ನು ಮನುಕುಲವು ಭಯ, ವಿಸ್ಮಯ, ಭಕ್ತಿಗಳಿಂದ ಅನಾದಿ ಕಾಲದಿಂದಲೂ ಆರಾಧಿಸುತ್ತಾ ಬಂದಿದೆ. ಋಗ್ವೇದದ ತುಂಬೆಲ್ಲ ಸೂರ್ಯದೇವರ ಕಲ್ಪನೆ ಮಹಿಮೆಗಳು ತುಂಬಿಕೊಂಡಿವೆ.<br>
+        ಇಂತಹ ಅಪಾರ ಮಹಿಮಾ ವಿಶೇಷವುಳ್ಳ, ಜಗದೇಕ ಚಕ್ಷುವೆನಿಸಿದ, ಕಣ್ಣಳತೆಗೆ ನಿಲುಕದ ಈ ಪ್ರಚಂಡ ಬೆಳಕಿನ ಪುಂಜವನ್ನು ಹತ್ತಿರದಿಂದ ವಿಗ್ರಹ ರೂಪದಲ್ಲಿ ದರ್ಶನ ಮಾಡುವ ಅಪೂರ್ವ ಪುಣ್ಯವು ನಾರಾವಿಯ ಶ್ರೀ ಸೂರ್ಯನಾರಾಯಣ ದೇಗುಲದಲ್ಲಿ ಸಾಕಾರಗೊಂಡಿದೆ.
+    </p>
+
+    <p>
+        ಭಾರತ ದೇಶದಲ್ಲೇ ಸೂರ್ಯ ದೇವಾಲಯಗಳು ವಿರಳ. ನಿತ್ಯವೂ ವ್ಯವಸ್ಥಿತವಾಗಿ ತ್ರಿಕಾಲ ಪೂಜೆ ನಡೆಯುವ ಕರ್ನಾಟಕದ ಬಹಳ ಅಪೂರ್ವ ಸೂರ್ಯನಾರಾಯಣ ದೇವಾಲಯ ನಾರಾವಿಯಲ್ಲಿದೆ.<br>
+        ಈ ದೇವಸ್ಥಾನದ ಇತಿಹಾಸವನ್ನು ಗಮನಿಸಿದರೆ ಕ್ರಿ.ಶ 1489ನೇ ಸೌಮ್ಯ ಸಂವತ್ಸರದ ಮೀನ ಮಾಸದ (ಸಂಕ್ರಮಣ) ಪರ್ವಕಾಲದಲ್ಲಿ ಸೋಮನಾಥನೆಂಬ ಮಾಂಡಲೀಕನ ಆಡಳಿತಾವಧಿಯಲ್ಲಿ ರಮಾದೇವಿ ಎಂಬ ಭಕ್ತೆಯು ಸೂರ್ಯನ ಆರಾಧನೆಗಾಗಿ ಈ ದೇವಾಲಯ ನಿರ್ಮಿಸಲು ಭೂಮಿಯನ್ನು ದಾನವಾಗಿ ನೀಡಿದಳೆಂಬ ಉಲ್ಲೇಖವಿರುವ ಶಿಲಾಶಾಸನವಿದೆ.
+    </p>
+
+    <p>
+        ಶ್ರೀ ಕ್ಷೇತ್ರದಲ್ಲಿ ನಿತ್ಯವೂ ತ್ರಿಕಾಲ ಪೂಜೆ ನಡೆಯುವುದರ ಜೊತೆಗೆ ಪ್ರತಿ ಸಂಕ್ರಮಣದಂದು ವಿಶೇಷ ಪೂಜೆ ಮತ್ತು ಸಾವಿರಾರು ಭಕ್ತರಿಗೆ ಅನ್ನದಾನ ನಡೆಯುತ್ತದೆ, ಸಿಂಹಸಂಕ್ರಮಣದಂದು ಇಪ್ಪತ್ತು ಸಾವಿರಕ್ಕಿಂತಲೂ ಅಧಿಕ ಭಕ್ತರು ದೇವರ ದರ್ಶನವನ್ನು ಪಡೆಯುತ್ತಾರೆ.<br>
+        ಕಾರ್ತಿಕ ಪೂಜೆ, ಹೂವಿನ ಪೂಜೆ, ಸೂರ್ಯ ನಮಸ್ಕಾರ, ಆದಿತ್ಯ ಹೃದಯ ಪಾರಾಯಣ, ರಂಗ ಪೂಜೆ, ಉರುಳು ಸೇವೆ, ತುಲಾಭಾರ ಇಂತಹ ವಿಶೇಷ ಸೇವೆಗಳನ್ನು ಸಲ್ಲಿಸಿ, ಸಂತಾನ ಇಲ್ಲದವರಿಗೆ ಸಂತಾನ ಫಲ, ಅವಿವಾಹಿತರಿಗೆ ಕಂಕಣ ಬಲ ಕೈಗೂಡಿದ, ವ್ಯಾಧಿಗಳಿಂದ ಮುಕ್ತರಾದ, ಮಾತು ಬಾರದ ಮಕ್ಕಳಿಗೆ ಮಾತು ಬಂದಂತಹ, ಅನೇಕ ಅನುಗ್ರಹಗಳನ್ನು ಪಡೆದ ಭಕ್ತರಿದ್ದಾರೆ.
+    </p>
+
+    <p>
+        ಪ್ರತಿ ವರ್ಷ ಕುಂಭ ಮಾಸದ ಪೂರ್ಣಿಮೆಯಂದು ಮೊದಲಗೊಂಡು ಏಳು ದಿನಗಳ ಪರ್ಯಂತ ವೈಭವದ ಜಾತ್ರಾ ಮಹೋತ್ಸವವು ಶ್ರೀ ಕ್ಷೇತ್ರದಲ್ಲಿ ನಡೆದು ಬಂದಿದೆ, ಮಾತ್ರವಲ್ಲದೇ ಮೀನ ಸಂಕ್ರಮಣದಂದು ಏಕಾಹೋರಾತ್ರಿ ಭಜನೋತ್ಸವ ವಿಜೃಂಭಣೆಯಿಂದ ನಡೆಯುತ್ತದೆ.<br>
+        ಪ್ರತೀ ಗುರುವಾರ ಭಜನಾ ಮಂಡಳಿಯ ವತಿಯಿಂದ ಭಜನಾ ಕಾರ್ಯಕ್ರಮ ನಡೆಯುತ್ತದೆ.
+    </p>
+
+    <p>
+        1848 ರಲ್ಲಿ ಈ ದೇವಸ್ಥಾನ ಜೀರ್ಣೋದ್ಧಾರಗೊಂಡು ಬ್ರಹ್ಮಕಲಶೋತ್ಸವ ನಡೆದಿತ್ತು. ಆ ಬಳಿಕ 1982 ರಲ್ಲಿ ಊರಿನ ಮತ್ತು ಪರವೂರಿನ ಭಕ್ತಾದಿಗಳ ಸಹಕಾರದಲ್ಲಿ ದೇವಸ್ಥಾನ ಪುನಃ ಜೀರ್ಣೋದ್ಧಾರಗೊಂಡು ವೈಭವದ ಬ್ರಹ್ಮಕಲಶೋತ್ಸವ ಜರಗಿತ್ತು.<br>
+        ಬಹಳ ಪುರಾತನವಾದ ದೇವಳದ ಗರ್ಭಗ್ರಹದ ತಳಪಾಯವು ಶಿಥಿಲಾವಸ್ಥೆಯಲ್ಲಿದ್ದುದರಿಂದ ದೀರ್ಘಕಾಲಾವಧಿಯ ನಂತರ 2010-2011 ರಲ್ಲಿ ಮತ್ತೆ ದೇವಾಲಯವನ್ನು ನವೀಕರಣಗೊಳಿಸಿ ಸುಮಾರು 3 ಕೋಟಿ ರೂ ವೆಚ್ಚದಲ್ಲಿ ಶ್ರೀ ದೇವರ ಗರ್ಭಗುಡಿ, ತೀರ್ಥ ಮಂಟಪ, ಸುತ್ತುಪೌಳಿ, ಮತ್ತು ಮುಖ ಮಂಟಪಗಳನ್ನು ಶಿಲಾಮಯವಾಗಿ ನಿರ್ಮಿಸಿ ಪುನ: ಪ್ರತಿಷ್ಠಾಪಬಂಧ ಬ್ರಹ್ಮಕಲಶೋತ್ಸವವನ್ನು 2011 ರಲ್ಲಿ ಬಹಳ ವೈಭವದಿಂದ ನಡೆಸಲಾಯಿತು.<br>
+        ಆ ಪುಣ್ಯ ಕಾರ್ಯದಲ್ಲಿ ಸಕ್ರಿಯವಾಗಿ ಭಾಗವಹಿಸಿದ ಧನ್ಯತೆ ನಮ್ಮ ನಿಮ್ಮೆಲ್ಲರ ಪಾಲಿಸಿದೆ.
+    </p>
+
+    <p>
+        ಆಗಮೋಕ್ತ ದೇವಾಲಯಗಳಲ್ಲಿ 12 ವರ್ಷಗಳಿಗೊಮ್ಮೆ ಅಷ್ಟಬಂಧ ಬ್ರಹ್ಮಕಲಶೋತ್ಸವ ನಡೆಯುವ ಸಂಪ್ರದಾಯ ಇರುತ್ತದೆ.<br>
+        ಈ ಪರಂಪರೆಯನ್ನು ಮುಂದುವರಿಸಿಕೊಂಡು ಹೋಗುವ ಸಲುವಾಗಿ ಮುಂದಿನ ಬ್ರಹ್ಮಕಲಶೋತ್ಸವವನ್ನು ದಿನಾಂಕ 28.02.2026 ರಿಂದ ದಿನಾಂಕ 09.03.2026ರ ವರೆಗೆ ವಾರ್ಷಿಕ ಜಾತ್ರಾ ಮಹೋತ್ಸವದ ಸಂದರ್ಭದಲ್ಲಿ ನಡೆಸುವುದಾಗಿ ದೇವಸ್ಥಾನದ ಆಡಳಿತ ಮಂಡಳಿ ಹಾಗೂ ಊರ ಪ್ರಮುಖರು ಸೇರಿ ನಿರ್ಧರಿಸಿರುತ್ತೇವೆ.
+    </p>
+
+    <p>
+        ಸರ್ವರಿಗೂ ಆದರದ ಸ್ವಾಗತ ಬಯಸುವ<br>
+        <strong>ಊರ ಪರವೂರ ಭಕ್ತರು</strong>
+    </p>
+</div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Created by <a href="https://www.instagram.com/itz_raxxi" target="_blank" class="social-link"><i class="fab fa-instagram"></i>itz_raxxi</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
